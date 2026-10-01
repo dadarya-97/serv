@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Кто может провести судебную экспертизу</title>
+<style>
+:root{--ink:#202124;--muted:#6b7280;--line:#e4e7ec;--bg:#f5f7fa;--card:#fff;--blue:#0b57d0;--blue2:#eaf2ff;--red:#a11a1a;--redbg:#fff2f2;--green:#176b3a;--greenbg:#eef9f2;--shadow:0 18px 50px rgba(20,31,51,.08);font-family:Inter,Arial,sans-serif}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink)}
+.wrap{max-width:900px;margin:0 auto;padding:56px 24px 80px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:34px}
+.brand-row{display:flex;align-items:center;gap:18px;margin:0 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line)}.brand-logo{display:block;width:165px;max-width:42%;height:auto;flex:0 0 auto}.brand-context{font-size:14px;line-height:1.35;color:var(--muted);padding-left:18px;border-left:1px solid var(--line)}h1{font-size:34px;line-height:1.12;margin:0 0 14px;letter-spacing:-.02em}p.lead{font-size:18px;line-height:1.55;color:#4b5563;margin:0 0 30px;max-width:760px}
+label.field-label{display:block;font-weight:700;margin-bottom:9px}.search-wrap{position:relative}.search{width:100%;border:1px solid #b9c0ca;border-radius:10px;padding:15px 44px 15px 16px;font-size:17px;outline:none;background:#fff}.search:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,87,208,.12)}.clear{position:absolute;right:12px;top:11px;border:0;background:transparent;font-size:24px;color:#6b7280;cursor:pointer;display:none}
+.dropdown{position:absolute;z-index:20;left:0;right:0;top:calc(100% + 7px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 36px rgba(0,0,0,.12);max-height:360px;overflow:auto;display:none}.option{padding:14px 16px;border-bottom:1px solid #edf0f3;cursor:pointer}.option:last-child{border-bottom:0}.option:hover,.option.active{background:#f5f8ff}.option strong{display:block;font-size:15px;margin-bottom:4px}.option span{display:block;font-size:13px;line-height:1.4;color:var(--muted)}.empty{padding:18px}.empty strong{display:block;margin-bottom:5px}.empty span{font-size:14px;color:var(--muted)}
+.selected{margin-top:24px;padding:16px 18px;border-radius:12px;background:#f7f8fa;border:1px solid var(--line)}.selected .cap{font-size:13px;color:var(--muted);margin-bottom:5px}.selected strong{display:block}.selected small{display:block;color:var(--muted);margin-top:4px;line-height:1.4}
+.question{margin-top:26px;border-top:1px solid var(--line);padding-top:25px}.question h2{font-size:21px;margin:0 0 16px}.radio{display:flex;gap:11px;align-items:flex-start;padding:13px 14px;border:1px solid var(--line);border-radius:10px;margin:9px 0;cursor:pointer;line-height:1.45}.radio:hover{border-color:#aab5c5;background:#fafbfc}.radio input{margin-top:3px;accent-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;padding:12px 18px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none}.btn-primary{background:var(--blue);color:#fff}.btn-secondary{background:#fff;color:var(--blue);border:1px solid #a9c5ef}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.result{margin-top:28px;border-radius:14px;padding:22px;border:1px solid}.result.restricted{background:var(--redbg);border-color:#f0c7c7}.result.free{background:var(--greenbg);border-color:#c7e5d1}.result h2{font-size:23px;line-height:1.25;margin:0 0 10px}.result.restricted h2{color:var(--red)}.result.free h2{color:var(--green)}.result p{line-height:1.55;margin:9px 0}.basis{margin-top:14px;padding-top:14px;border-top:1px solid rgba(0,0,0,.1);font-size:14px}.notice{font-size:13px;color:#606975;line-height:1.5;margin-top:16px}.date-note{margin-top:16px;font-size:13px;color:#5f6670}.hidden{display:none!important}
+@media(max-width:620px){.wrap{padding:24px 14px 50px}.card{padding:22px 18px}.brand-row{gap:12px;margin-bottom:22px;padding-bottom:16px}.brand-logo{width:140px;max-width:48%}.brand-context{font-size:12px;padding-left:12px}h1{font-size:28px}p.lead{font-size:16px}.result h2{font-size:20px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="card">
+<div class="brand-row"><img class="brand-logo" src="https://static.tildacdn.com/tild3938-3466-4961-b266-633430626265/photo.JPG" alt="Система Юрист"><div class="brand-context">Сервис для работы<br>с судебной экспертизой</div></div>
+<h1>Узнайте, кто может провести судебную экспертизу</h1>
+<p class="lead">Начните вводить вид экспертизы. Сервис определит, обязательно ли обращаться в государственную судебно-экспертную организацию, и покажет основание.</p>
+
+<label class="field-label" for="search">Введите вид экспертизы</label>
+<div class="search-wrap">
+<input id="search" class="search" type="text" autocomplete="off" placeholder="Например, строительно-техническая" aria-autocomplete="list" aria-controls="suggestions">
+<button id="clear" class="clear" aria-label="Очистить">×</button>
+<div id="suggestions" class="dropdown" role="listbox"></div>
+</div>
+
+<div id="selected" class="selected hidden"></div>
+<div id="questions"></div>
+<div id="result"></div>
+</section>
+</main>
+<script>
+const LEGAL_URL='https://publication.pravo.gov.ru/Document/View/0001202111170022';
+const AMENDMENT_2027_URL='https://www.consultant.ru/document/cons_doc_LAW_526374/';
+const TODAY=new Date();
+const RULE_2027=new Date('2027-01-01T00:00:00');
+
+// Справочник легко расширяется: каждая запись — отдельный вид/исследование.
+const exams=[
+ {id:'construction-objects',type:'Строительно-техническая экспертиза',study:'Исследование строительных объектов и территории, функционально связанной с ними',keywords:'строительство строительная строительно-техническая самовольная постройка самострой недвижимость',logic:'construction'},
+ {id:'construction-cost',type:'Строительно-техническая экспертиза',study:'Исследование стоимости строительства, финансируемого с привлечением бюджетных средств',keywords:'строительство стоимость бюджет бюджетные средства',logic:'construction'},
+ {id:'construction-roads',type:'Строительно-техническая экспертиза',study:'Исследование автомобильных дорог, мостов, тоннелей, аэродромов и специальных сооружений',keywords:'дорога мост тоннель аэродром сооружение строительство',logic:'construction'},
+ {id:'land',type:'Землеустроительная экспертиза',study:'Исследование объектов землеустройства и земельных участков',keywords:'земля земельный участок границы кадастровая стоимость землеустройство',logic:'land'},
+ {id:'ballistic',type:'Баллистическая экспертиза',study:'Исследование огнестрельного оружия, боеприпасов и следов выстрела',keywords:'баллист оружие пуля патрон выстрел боеприпас',logic:'criminal'},
+ {id:'explosive',type:'Взрывотехническая экспертиза',study:'Исследование взрывчатых веществ, взрывных устройств и следов взрыва',keywords:'взрыв взрывчатка устройство',logic:'criminal'},
+ {id:'psychological',type:'Судебно-психологическая экспертиза',study:'Психологическое исследование участников судопроизводства',keywords:'психолог психологическая',logic:'criminal'},
+ {id:'drugs',type:'Экспертиза наркотических средств, психотропных веществ и их прекурсоров, сильнодействующих и ядовитых веществ',study:'Исследование наркотических, психотропных, сильнодействующих и ядовитых веществ',keywords:'наркотики наркотическое психотропное яд ядовитое вещества материалы',logic:'criminal'},
+ {id:'fire',type:'Пожарно-техническая экспертиза',study:'Исследование обстоятельств возникновения и развития пожара',keywords:'пожар огонь возгорание пожарная безопасность',logic:'fire'},
+ {id:'ling',type:'Лингвистическая экспертиза',study:'Исследование продуктов речевой деятельности',keywords:'лингвистика текст речь экстремизм терроризм',logic:'terror'},
+ {id:'psycholing',type:'Психолого-лингвистическая экспертиза',study:'Комплексное психологическое и лингвистическое исследование материалов',keywords:'психолого-лингвистическая текст речь экстремизм терроризм',logic:'terror'},
+ {id:'psychiatric',type:'Судебно-психиатрическая экспертиза',study:'Судебно-психиатрическое исследование',keywords:'психиатр психиатрическая',logic:'always'},
+ {id:'fin-econ',type:'Экономическая экспертиза',study:'Финансово-экономическая экспертиза',keywords:'экономика финансовая финансы бюджет ущерб природные ресурсы',logic:'economic',subtype:'financial-economic'},
+ {id:'fin-analysis',type:'Экономическая экспертиза',study:'Финансово-аналитическая экспертиза',keywords:'экономика финансовая анализ финансы бюджет ущерб природные ресурсы',logic:'economic',subtype:'financial-analytical'},
+ {id:'tax',type:'Экономическая экспертиза',study:'Налоговая экспертиза',keywords:'налог налоги сборы экономика налоговая неуплата',logic:'economic',subtype:'tax'},
+ {id:'handwriting',type:'Почерковедческая экспертиза',study:'Исследование почерка и подписей',keywords:'почерк подпись подписи рукопись',logic:'none'},
+ {id:'auto-crash',type:'Автотехническая экспертиза',study:'Исследование обстоятельств дорожно-транспортного происшествия',keywords:'дтп авария автомобиль машина автотехническая',logic:'none'},
+ {id:'auto-state',type:'Автотехническая экспертиза',study:'Исследование технического состояния деталей и узлов транспортных средств',keywords:'автомобиль машина техническое состояние детали узлы',logic:'none'},
+ {id:'auto-traces',type:'Автотехническая экспертиза',study:'Исследование следов на транспортных средствах и месте ДТП',keywords:'дтп следы автомобиль машина место происшествия',logic:'none'},
+ {id:'computer',type:'Компьютерная экспертиза',study:'Исследование компьютерной информации и цифровых носителей',keywords:'компьютер ноутбук телефон данные цифровая информация носитель',logic:'none'},
+ {id:'dna',type:'Экспертиза тканей и выделений человека, животных',study:'Молекулярно-генетическое исследование биологических объектов',keywords:'днк генетика биология кровь слюна ткани выделения',logic:'none'}
+];
+
+const search=document.querySelector('#search'), suggestions=document.querySelector('#suggestions'), selectedBox=document.querySelector('#selected'), questions=document.querySelector('#questions'), result=document.querySelector('#result'), clear=document.querySelector('#clear');
+let selected=null;
+const norm=s=>s.toLowerCase().replace(/ё/g,'е');
+function matches(e,q){q=norm(q).trim(); if(!q)return false; return norm([e.type,e.study,e.keywords].join(' ')).includes(q)}
+function renderSuggestions(){
+ const q=search.value.trim(); clear.style.display=q?'block':'none';
+ if(!q){suggestions.style.display='none';return}
+ const found=exams.filter(e=>matches(e,q)).slice(0,12); suggestions.innerHTML='';
+ if(!found.length){suggestions.innerHTML='<div class="empty"><strong>Такой экспертизы нет в справочнике</strong><span>Попробуйте изменить формулировку или выбрать наиболее близкий вид экспертизы.</span></div>'; suggestions.style.display='block';return}
+ found.forEach(e=>{const d=document.createElement('div');d.className='option';d.setAttribute('role','option');d.innerHTML=`<strong>${e.type}</strong><span>${e.study}</span>`;d.onclick=()=>choose(e);suggestions.appendChild(d)}); suggestions.style.display='block';
+}
+search.addEventListener('input',()=>{if(selected){selected=null;selectedBox.classList.add('hidden');questions.innerHTML='';result.innerHTML=''}renderSuggestions()});
+search.addEventListener('focus',renderSuggestions);
+document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))suggestions.style.display='none'});
+clear.onclick=reset;
+function choose(e){selected=e;search.value=e.type;suggestions.style.display='none';clear.style.display='block';selectedBox.classList.remove('hidden');selectedBox.innerHTML=`<div class="cap">Вы выбрали:</div><strong>${e.type}</strong><small>${e.study}</small>`;result.innerHTML='';renderLogic(e)}
+function radioQuestion(title,opts,onchange){questions.innerHTML=`<section class="question"><h2>${title}</h2><div id="radios"></div></section>`;const box=document.querySelector('#radios');opts.forEach((o,i)=>{const l=document.createElement('label');l.className='radio';l.innerHTML=`<input type="radio" name="answer" value="${o.value}"><span>${o.label}</span>`;l.querySelector('input').onchange=()=>onchange(o.value);box.appendChild(l)})}
+function renderLogic(e){
+ questions.innerHTML='';
+ if(e.logic==='none') return showResult(false,'Этот вид экспертизы не включен в перечень случаев, когда судебную экспертизу проводят исключительно государственные судебно-экспертные организации.','Распоряжение Правительства РФ от 16.11.2021 № 3214-р.');
+ if(e.logic==='always') return showResult(true,'Судебно-психиатрическая экспертиза включена в самостоятельный раздел перечня.','Раздел V перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.');
+ if(e.logic==='criminal') return radioQuestion('В рамках какого производства проводят экспертизу?',[{value:'yes',label:'По уголовному делу или при проверке сообщения о преступлении'},{value:'no',label:'В другой ситуации'}],v=>showResult(v==='yes',v==='yes'?'Экспертиза проводится по уголовному делу или при проверке сообщения о преступлении. Для такого случая этот вид экспертизы включен в раздел I перечня.':'Для выбранной ситуации специальное ограничение из распоряжения № 3214-р не установлено.',v==='yes'?'Раздел I перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.':'Распоряжение Правительства РФ от 16.11.2021 № 3214-р.'));
+ if(e.logic==='construction') return constructionQuestion(e);
+ if(e.logic==='land') return landQuestion(e);
+ if(e.logic==='fire') return fireStep1();
+ if(e.logic==='terror') return radioQuestion('С чем связано уголовное дело или сообщение о преступлении?',[{value:'terror',label:'С проявлением терроризма или экстремизма'},{value:'other',label:'С другими обстоятельствами'},{value:'notcriminal',label:'Экспертиза проводится не по уголовному делу и не при проверке сообщения о преступлении'}],v=>showResult(v==='terror',v==='terror'?'Уголовное дело или сообщение о преступлении связано с проявлением терроризма или экстремизма. Для такого случая экспертиза включена в раздел IV перечня.':'Для выбранной ситуации специальное ограничение из распоряжения № 3214-р не установлено.',v==='terror'?'Раздел IV перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.':'Распоряжение Правительства РФ от 16.11.2021 № 3214-р.'));
+ if(e.logic==='economic') return economicQuestion(e);
+}
+function constructionQuestion(e){
+ let opts=[{value:'cadastre',label:'С определением рыночной стоимости недвижимости в рамках оспаривания или установления кадастровой стоимости'},{value:'selfbuild',label:'С гражданским делом о самовольном строительстве'}];
+ if(TODAY>=RULE_2027)opts.push({value:'seizure',label:'С изъятием земельного участка и (или) недвижимости для государственных или муниципальных нужд и определением причиненных изъятием убытков'});opts.push({value:'other',label:'С другой ситуацией'});
+ radioQuestion('С чем связано проведение экспертизы?',opts,v=>{const restricted=['cadastre','selfbuild','seizure'].includes(v);let why=v==='cadastre'?'Экспертиза нужна для определения рыночной стоимости недвижимости в рамках оспаривания или установления кадастровой стоимости.':v==='selfbuild'?'Экспертиза проводится по гражданскому делу, связанному с самовольным строительством.':v==='seizure'?'Экспертиза связана с изъятием участка или недвижимости для государственных или муниципальных нужд и определением убытков.':'Для выбранной ситуации специальное ограничение из распоряжения № 3214-р не установлено.';let basis=v==='cadastre'?'Раздел II перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.':v==='selfbuild'?'Раздел VIII перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.':v==='seizure'?'Раздел IX перечня (действует с 01.01.2027), введенный распоряжением Правительства РФ от 11.02.2026 № 239-р.':'Распоряжение Правительства РФ от 16.11.2021 № 3214-р.';showResult(restricted,why,basis,v==='seizure'?AMENDMENT_2027_URL:LEGAL_URL)})
+}
+function landQuestion(e){let opts=[{value:'cadastre',label:'Для определения рыночной стоимости объекта землеустройства в рамках оспаривания или установления кадастровой стоимости'}];if(TODAY>=RULE_2027)opts.push({value:'seizure',label:'В связи с изъятием земельного участка и (или) недвижимости для государственных или муниципальных нужд и определением причиненных изъятием убытков'});opts.push({value:'other',label:'Для другой цели'});radioQuestion('Для чего проводят экспертизу?',opts,v=>{const r=v!=='other';showResult(r,v==='cadastre'?'Экспертиза проводится для определения рыночной стоимости объекта землеустройства в рамках оспаривания или установления кадастровой стоимости.':v==='seizure'?'Экспертиза связана с изъятием для государственных или муниципальных нужд и определением убытков.':'Для выбранной цели специальное ограничение из распоряжения № 3214-р не установлено.',v==='cadastre'?'Раздел II перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.':v==='seizure'?'Раздел IX перечня (с 01.01.2027), введенный распоряжением Правительства РФ от 11.02.2026 № 239-р.':'Распоряжение Правительства РФ от 16.11.2021 № 3214-р.',v==='seizure'?AMENDMENT_2027_URL:LEGAL_URL)})}
+function fireStep1(){radioQuestion('В рамках какого производства проводят экспертизу?',[{value:'yes',label:'По уголовному делу или при проверке сообщения о преступлении'},{value:'no',label:'В другой ситуации'}],v=>{if(v==='no')showResult(false,'Экспертиза проводится вне уголовного дела и не при проверке сообщения о преступлении. Специальное ограничение для этой ситуации не установлено.','Распоряжение Правительства РФ от 16.11.2021 № 3214-р.');else radioQuestion('С чем связано дело или сообщение о преступлении?',[{value:'firecase',label:'С пожаром или нарушением требований пожарной безопасности, повлекшим гибель людей либо тяжкий вред здоровью, либо с действиями по спасению людей и имущества от опасных факторов пожара или ликвидации пожара'},{value:'other',label:'С другими обстоятельствами'}],x=>showResult(x==='firecase',x==='firecase'?'Совпали оба условия раздела III перечня: производство уголовное (или проводится проверка сообщения о преступлении), а обстоятельства связаны с указанными последствиями пожара или действиями при пожаре.':'Обстоятельства не совпадают со специальным условием раздела III перечня.','Раздел III перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.'))})}
+function economicQuestion(e){let opts=[{value:'tax',label:'С неуплатой налогов или сборов'},{value:'nature',label:'С причинением ущерба природным ресурсам'},{value:'budget',label:'С нецелевым расходованием или хищением бюджетных денежных средств'}];if(TODAY>=RULE_2027)opts.push({value:'seizure',label:'С изъятием земельного участка и (или) недвижимости для государственных или муниципальных нужд и определением причиненных изъятием убытков'});opts.push({value:'other',label:'С другими обстоятельствами'},{value:'notcriminal',label:'Экспертиза проводится не по уголовному делу и не при проверке сообщения о преступлении'});radioQuestion('С чем связано уголовное дело или сообщение о преступлении?',opts,v=>{let restricted=false,basis='Распоряжение Правительства РФ от 16.11.2021 № 3214-р.',why='Для выбранной ситуации специальное ограничение из распоряжения № 3214-р не установлено.',url=LEGAL_URL;if(['tax','nature'].includes(v)){restricted=true;basis='Раздел VI перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.';why='Экономическая экспертиза проводится по уголовному делу или при проверке сообщения о преступлении, связанному с неуплатой налогов и сборов либо причинением ущерба природным ресурсам.'}if(v==='budget'){restricted=true;basis='Раздел VII перечня, утв. распоряжением Правительства РФ от 16.11.2021 № 3214-р.';why='Экономическая экспертиза связана с нецелевым расходованием или хищением бюджетных денежных средств.'}if(v==='seizure'){restricted=true;basis='Раздел IX перечня (с 01.01.2027), введенный распоряжением Правительства РФ от 11.02.2026 № 239-р.';why='Экономическая экспертиза связана с изъятием для государственных или муниципальных нужд и определением причиненных убытков.';url=AMENDMENT_2027_URL}showResult(restricted,why,basis,url)})}
+function showResult(restricted,why,basis,url=LEGAL_URL){const title=restricted?'Только государственная судебно-экспертная организация':'Не обязательно обращаться в государственную организацию';result.innerHTML=`<section class="result ${restricted?'restricted':'free'}"><h2>${title}</h2><p>${restricted?'В выбранной ситуации действует специальное требование о проведении экспертизы государственной судебно-экспертной организацией.':'Для выбранной ситуации распоряжение № 3214-р не устанавливает требования проводить экспертизу исключительно в государственной судебно-экспертной организации.'}</p><p><strong>Почему:</strong> ${why}</p><div class="basis"><strong>Основание:</strong> ${basis}</div><div class="actions"><a class="btn btn-primary" href="${url}" target="_blank" rel="noopener">Открыть основание</a><button class="btn btn-secondary" id="restart">Проверить другую экспертизу</button></div><div class="notice">Результат «Не обязательно обращаться в государственную организацию» означает только отсутствие специального ограничения из распоряжения № 3214-р. Он не подтверждает квалификацию конкретного эксперта или организации и не отменяет иные требования закона к назначению и проведению судебной экспертизы.</div></section>`;document.querySelector('#restart').onclick=reset;result.scrollIntoView({behavior:'smooth',block:'nearest'})}
+function reset(){selected=null;search.value='';suggestions.style.display='none';selectedBox.classList.add('hidden');selectedBox.innerHTML='';questions.innerHTML='';result.innerHTML='';clear.style.display='none';search.focus()}
+</script>
+</body>
+</html>
